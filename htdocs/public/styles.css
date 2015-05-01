@@ -13,7 +13,7 @@ body {
 .head_wrap {
 }
 .header {
-    width: 90%;
+    width: 80%;
     background-color: #3F8AB3;
     margin-left: auto;
     margin-right: auto;
@@ -23,14 +23,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-	width: 33%
+	width: 680px;
 }
 .nav_wrap {
 
 }
 
 .nav {
-    width: 90%;
+    width: 80%;
     background-color: #000000;
     margin-left: auto;
     margin-right: auto;
@@ -39,9 +39,9 @@ body {
 }
 
 .nav a {
-    color: #FF0000;
+    color: #FFFFFF;
     float: right;
-    width: 100px;
+    margin-right: 25px;
 }
 
 #pageSeperator {
@@ -53,7 +53,7 @@ body {
 }
 .content_wrap {
     background-color: #FDFBE2;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: block;
