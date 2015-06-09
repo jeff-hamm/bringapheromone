@@ -17,12 +17,6 @@
 			</div>
 		</div>
 		<div class="content_wrap" id="content-holder">
-			<div id="booth-img" class="content center-img">
-				<img src="images/booth.jpg"/>
-			</div>
-			<div id="layout-img" class="content center-img">
-				<img src="images/layout.png" />
-			</div>
 			<div class="content contained-text" id="home-text" >
 				<H1 class="welcome">Welcome!</H1>
 				<div class="text">
@@ -54,6 +48,18 @@
 					<P>We will provide lucky participants with a pheromone based blind-dating experience. With two groups of four participants each taking turns smelling the other group, carefully and deliberately smelling for signs of compatibility, we will use a run-off-balloting style matching system to pair each participant with their ideal mate. Once paired, they will be shuttled to our pheromone activity center where they can learnpheromone facts, play Monkey in a Tree, or generally get to smell each other before heading out on a grand playa date. We'll run this event three times throughout the week!</p>
 					</div>
 			</div>
+					<div id="booth-img" class="content">
+						<hr id="booth"/>
+						<H1 class="welcome">The 2014 Booth</H1>
+						<img src="images/booth.jpg" class="center-img"/>
+						<hr/>
+					</div>
+					<div id="layout-img" class="content">
+						<hr id="layout"/>
+						<H1 class="welcome">2015 Camp Layout</H1>
+						<img src="images/layout.png" class="center-img" />
+						<hr/>
+					</div>
 		</div>
 		<script language="javascript">
 		function showLayout() {
@@ -63,7 +69,11 @@
 			showDiv('#booth-img');
 		}
 		function showHome() {
-			showDiv('#home-text');
+			showAll();
+		}
+		function showAll() {
+			var v = $("#content-holder > .content");
+			v.show();
 		}
 		
 		function showDiv(id) {
@@ -71,8 +81,6 @@
 			v.hide();
 			$(id).show();
 		}
-		
-		showHome();
 		</script>
 		</body>
 </html>
