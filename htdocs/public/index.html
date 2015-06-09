@@ -2,6 +2,7 @@
 	<head>
 		<title>Welcome to camp Bring a Pheromone -- Burning Man 2015</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="head_wrap">
@@ -12,41 +13,66 @@
 		</div>
 		<div class="nav_wrap">
 			<div class="nav">
-				<a href="images/layout.png">Layout</a> | <a href="images/Booth.jpg">2013 Booth</a> | <a href="index.html">Home</a>
+				<a href="javascript:void(0)" onclick="showLayout()">Layout</a> | <a href="javascript:void(0)" onclick="showBooth()">2013 Booth</a> | <a href="javascript:void(0)" onclick="showHome()">Home</a>
 			</div>
 		</div>
-		<div class="content_wrap">
-			<div class="content">
-			<H1 class="welcome">Welcome!</H1>
-			<div class=text>
-				<P>Are pheromones the secret to lasting love and connection? Or, do you just want an excuse to smell a stranger's armpit? Not Sure? Just Bring a Pheromone!</p>
-	
-				<P>The armpit smelling booth was a huge hit in 2013 as seen in
-					<ul> 
-						<li><a href="http://jackrabbit.burningman.com/t/ViewEmailArchive/t/4879D1D9586C021F/C67FD2F38AC4859C/#PVA_2">Jack Rabbit Speaks</a></li>
-						<li><A href="http://www.buzzfeed.com/kevintang/53-things-i-learned-at-burning-man?utm_term=.db8e9xgLVV&sub=2582431_1602518">Buzzfeed</A></li>
-						<li><a href="http://burningmanhateweek.tumblr.com/post/95505492887/terror-level-orange-biological-weapons-of-mass">Burning Man Hate Week</a></li>
-					</ul>
-				</p>
-				
-				<P>It was attractive, interactive and exactly what's special about Burning Man, but it was small, totally unadvertised, and undermanned: an offshoot of Tissue and a Plan (a wonderfully weird little camp on its own) that needed space to grow.</p>
-				
-				<P>Well, it's coming back to Playa! And it's not just a booth, it's a whole experience... It's Bring a Pheromone.</p>
-				
-				<P>As a 24 hour service, it is available to tease passerbys into experiencing a Wine & Cheese type analysis of an unseen stranger in the booth (we call it an armpit glory-hole, really). We take the enterprising wanderer through a proper armpit smelling:</p>
-				
-				<P>First, we name the armpit using a Rorschach-type analysis of the available armpit features (with names ranging from 'Old Man Whiskers' to '5pm Shadow' to 'Glitterpit'). Then, we sample the moisture level and take an initial whiff of the overall scent and give it a general rating. From there, we delve into each of the important characteristics of the smell (nuttiness, robustness, acidity and so on) to create a flavor profile graph which acts as a nice visualization of a person's scent. Finally, the smeller is encouraged to go in for a taste.
-				We record all of this data on a <a href="http://imgur.com/KMWdUHw">sheet</a> which the smeller can either keep, give to the person in the booth, or leave with us.</p>
-				
-				<P>We have found that, manned or unmanned, the booth itself draws a crowd. Since we burned the last one, we'll be making it again, but bigger & better! It will feature four armpit glory-hole ports, full nighttime lighting, and an LED rank-o-meter to allow the audience to observe exactly how much the smeller likes the smellee.</p>
-				
-				<P>The booth is awesome, but we can do even more. This year, we will introduce Pheromone Dating Events!</p>
-				
-				<P>Pheromones are strong markers of personal compatibility, they can make someone irresistible or unacceptable. However - sadly - we often don't get close enough to this important signal until it's too late to back out gracefully.</p>
-				
-				<P>We will provide lucky participants with a pheromone based blind-dating experience. With two groups of four participants each taking turns smelling the other group, carefully and deliberately smelling for signs of compatibility, we will use a run-off-balloting style matching system to pair each participant with their ideal mate. Once paired, they will be shuttled to our pheromone activity center where they can learnpheromone facts, play Monkey in a Tree, or generally get to smell each other before heading out on a grand playa date. We'll run this event three times throughout the week!</p>
-				</div>
+		<div class="content_wrap" id="content-holder">
+			<div id="booth-img" class="content center-img">
+				<img src="images/booth.jpg"/>
+			</div>
+			<div id="layout-img" class="content center-img">
+				<img src="images/layout.png" />
+			</div>
+			<div class="content contained-text" id="home-text" >
+				<H1 class="welcome">Welcome!</H1>
+				<div class="text">
+					<P>Are pheromones the secret to lasting love and connection? Or, do you just want an excuse to smell a stranger's armpit? Not Sure? Just Bring a Pheromone!</p>
+		
+					<P>The armpit smelling booth was a huge hit in 2013 as seen in
+						<ul> 
+							<li><a href="http://jackrabbit.burningman.com/t/ViewEmailArchive/t/4879D1D9586C021F/C67FD2F38AC4859C/#PVA_2">Jack Rabbit Speaks</a></li>
+							<li><A href="http://www.buzzfeed.com/kevintang/53-things-i-learned-at-burning-man?utm_term=.db8e9xgLVV&sub=2582431_1602518">Buzzfeed</A></li>
+							<li><a href="http://burningmanhateweek.tumblr.com/post/95505492887/terror-level-orange-biological-weapons-of-mass">Burning Man Hate Week</a></li>
+						</ul>
+					</p>
+					
+					<P>It was attractive, interactive and exactly what's special about Burning Man, but it was small, totally unadvertised, and undermanned: an offshoot of Tissue and a Plan (a wonderfully weird little camp on its own) that needed space to grow.</p>
+					
+					<P>Well, it's coming back to Playa! And it's not just a booth, it's a whole experience... It's Bring a Pheromone.</p>
+					
+					<P>As a 24 hour service, it is available to tease passerbys into experiencing a Wine & Cheese type analysis of an unseen stranger in the booth (we call it an armpit glory-hole, really). We take the enterprising wanderer through a proper armpit smelling:</p>
+					
+					<P>First, we name the armpit using a Rorschach-type analysis of the available armpit features (with names ranging from 'Old Man Whiskers' to '5pm Shadow' to 'Glitterpit'). Then, we sample the moisture level and take an initial whiff of the overall scent and give it a general rating. From there, we delve into each of the important characteristics of the smell (nuttiness, robustness, acidity and so on) to create a flavor profile graph which acts as a nice visualization of a person's scent. Finally, the smeller is encouraged to go in for a taste.
+					We record all of this data on a <a href="http://imgur.com/KMWdUHw">sheet</a> which the smeller can either keep, give to the person in the booth, or leave with us.</p>
+					
+					<P>We have found that, manned or unmanned, the booth itself draws a crowd. Since we burned the last one, we'll be making it again, but bigger & better! It will feature four armpit glory-hole ports, full nighttime lighting, and an LED rank-o-meter to allow the audience to observe exactly how much the smeller likes the smellee.</p>
+					
+					<P>The booth is awesome, but we can do even more. This year, we will introduce Pheromone Dating Events!</p>
+					
+					<P>Pheromones are strong markers of personal compatibility, they can make someone irresistible or unacceptable. However - sadly - we often don't get close enough to this important signal until it's too late to back out gracefully.</p>
+					
+					<P>We will provide lucky participants with a pheromone based blind-dating experience. With two groups of four participants each taking turns smelling the other group, carefully and deliberately smelling for signs of compatibility, we will use a run-off-balloting style matching system to pair each participant with their ideal mate. Once paired, they will be shuttled to our pheromone activity center where they can learnpheromone facts, play Monkey in a Tree, or generally get to smell each other before heading out on a grand playa date. We'll run this event three times throughout the week!</p>
+					</div>
 			</div>
 		</div>
-	</body>
+		<script language="javascript">
+		function showLayout() {
+			showDiv('#layout-img');
+		}
+		function showBooth() {
+			showDiv('#booth-img');
+		}
+		function showHome() {
+			showDiv('#home-text');
+		}
+		
+		function showDiv(id) {
+			var v = $("#content-holder > .content:visible");
+			v.hide();
+			$(id).show();
+		}
+		
+		showHome();
+		</script>
+		</body>
 </html>

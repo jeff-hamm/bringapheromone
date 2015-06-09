@@ -57,9 +57,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-.content {
+.contained-text {
     overflow: hidden;
     padding: 0;
     margin-top: 0;
@@ -83,4 +85,11 @@ body {
 .content P {
     font-family: Georgia, serif;
     font-size: 14pt;
+}
+
+.center-img {
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
