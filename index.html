@@ -13,7 +13,7 @@
 		</div>
 		<div class="nav_wrap">
 			<div class="nav">
-				<a href="javascript:void(0)" onclick="showLayout()">Layout</a> | <a href="javascript:void(0)" onclick="showBooth()">The Camp</a> | <a href="javascript:void(0)" onclick="showCampers()">The Scent Sommeliers</a> | <a href="javascript:void(0)" onclick="showHome()">Home</a>
+				<a href="javascript:void(0)" onclick="showLayout()">Layout</a> | <a href="javascript:void(0)" onclick="showCamp()">The Camp</a> | <a href="javascript:void(0)" onclick="showBooth()">The Booth</a> | <a href="javascript:void(0)" onclick="showCampers()">The Scent Sommeliers</a> | <a href="javascript:void(0)" onclick="showHome()">Home</a>
 			</div>
 		</div>
 		<div class="content_wrap" id="content-holder">
@@ -49,7 +49,7 @@
 					</div>
 			</div>
 			<div id="the-campers" class="content">
-				<hr id="booth"/>
+				<hr id="campers"/>
 				<H1 class="welcome">The Scent Sommeliers</H1>
 				<img src="images/2017/campers/campers1.jpg" class="tri-img"/>
 				<img src="images/2017/campers/campers2.jpg" class="tri-img"/>
@@ -58,8 +58,13 @@
 			</div>
 			<div id="booth-img" class="content">
 				<hr id="booth"/>
-				<H1 class="welcome">The Camp</H1>
+				<H1 class="welcome">The Booth</H1>
 				<img src="images/booth.jpg" class="tri-img"/>
+				<img src="images/handout.jpg" class="tri-img"/>
+			</div>
+			<div id="the-camp" class="content">
+				<hr id="camp"/>
+				<H1 class="welcome">The Camp</H1>
 				<img src="images/2017/frontage/frontage1.jpg" class="tri-img"/>
 				<img src="images/2017/frontage/frontage2.jpg" class="tri-img"/>
 				<img src="images/2017/frontage/frontage3.jpg" class="tri-img"/>
@@ -82,6 +87,9 @@
 		}
 		function showBooth() {
 			showDiv('#booth-img');
+		}
+		function showCamp() {
+			showDiv('#the-camp');
 		}
 		function showHome() {
 			showAll();
