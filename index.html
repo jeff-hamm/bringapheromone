@@ -102,7 +102,7 @@
 			showDiv('#the-camp');
 		}
 		function showHome() {
-			showAll();
+			showDiv('#home-text');
 		}
 		function showAll() {
 			var v = $("#content-holder > .content");
@@ -114,6 +114,10 @@
 			v.hide();
 			$(id).show();
 		}
+		$(document).ready(function() {
+			showHome();
+		});
+		
 		</script>
 		</body>
 </html>
