@@ -14,7 +14,7 @@ body {
 }
 .header {
     width: 80%;
-    background-color: #3F8AB3;
+    background-color: #0087CD;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -52,7 +52,7 @@ body {
     border: 0;
 }
 .content_wrap {
-    background-color: #FDFBE2;
+    background-color: #FBF6A2;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
