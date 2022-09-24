@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Welcome to camp Bring a Pheromone -- Burning Man 2017</title>
+		<title>Welcome to camp Bring a Pheromone -- Burning Man</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
@@ -9,11 +9,6 @@
 			<div class="header">
 				<a href="javascript:void(0)" onclick="showHome()"><img  id="banner" src="images/banner.png" /></a>
 				<HR id="pageSeperator" align="center"/>				
-			</div>
-		</div>
-		<div class="nav_wrap">
-			<div class="nav">
-				<a href="javascript:void(0)" onclick="showLayout()">Layout</a> | <a href="javascript:void(0)" onclick="showCamp()">The Camp</a> | <a href="javascript:void(0)" onclick="showBooth()">The Booth</a> | <a href="javascript:void(0)" onclick="showCampers()">The Scent Sommeliers</a> | <a href="javascript:void(0)" onclick="showHome()">Home</a>
 			</div>
 		</div>
 		<div class="content_wrap" id="content-holder">
@@ -79,21 +74,11 @@
 				<img src="images/2017/frontage/frontage3.jpg" class="tri-img"/>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/zDfInRZvgWw" class="tri-img" frameborder="0" allowfullscreen></iframe>
 				<hr/>
-			</div>
-			<div id="layout-img" class="content">
-				<hr id="layout"/>
-				<H1 class="welcome">Camp Layout</H1>
-				<img src="images/2017/layout.png" class="center-img" />
-				<hr/>
-			</div>
-					
+			</div>					
 		</div>
 		<script language="javascript">
 		function showCampers() {
 			showDiv('#the-campers');
-		}
-		function showLayout() {
-			showDiv('#layout-img');
 		}
 		function showBooth() {
 			showDiv('#booth-img');
